@@ -4,15 +4,119 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      h1 {
-        text-align: center;
-        color: blueviolet;
-      }
-    </style>
+    <title>Weather App</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+   
   </head>
+
   <body>
-    <h1>Hello Git</h1>
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <form id="search-form">
+            <div class="row">
+              <div class="col-6">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="city-input"
+                    placeholder="Enter the name of the city"
+                  />
+                </div>
+              </div>
+        <br /> 
+              <div class="col">
+                <input type="submit" class="btn btn-primary" value="Search" />
+               <input
+               id="current"
+                type="button"
+                class="btn btn-primary"
+                value="Current location"
+              />
+            </div>
+
+
+          </form>
+
+         <div class="row">
+           <div class="col-2" id="time-day">14:06 Wed</div>
+            <div class="col-2" id="date">24/05</div> 
+         </div>
+         
+         <h1 class="city">Paris</h1>
+          
+           <div class="row">
+               <div class="col-3">
+          <div class="card">
+  <div class="card-body temperature">
+    
+    <span class="temperature" id="temperature">10</span>
+    <span class="unit"> 
+<a href="#" id="celsium-unit">°C</a> |
+<a href="#" id="fahrenheit-unit">°F</a>
+</span>
+  
+  </div>
+</div>
+    </div> 
+    <div class="col-3">
+<p id="weather-details"> Rainy ⛈️ </p>
+<small id="description"> 
+    Don`t forget your umbrela
+</small>
+    </div>           
+</div>
+
+
+          <div class="row templine">
+               <hr />
+            <div class="col">
+               
+                <ul>
+                    <li>24/05</li>
+                    <li>10°C</li>
+                    <li>⛈️</li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <ul>
+                    <li>25/05</li>
+                    <li>10°C</li>
+                    <li>⛈️</li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul>
+                    <li>26/05</li>
+                    <li>10°C</li>
+                    <li>⛈️</li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul>
+                    <li>27/05</li>
+                    <li>10°C</li>
+                    <li>⛈️</li>
+                </ul>
+            </div>
+            <div class="col"><ul>
+                    <li>28/05</li>
+                    <li>10°C</li>
+                    <li>⛈️</li>
+                </ul></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
   </body>
 </html>

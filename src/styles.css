@@ -1,0 +1,39 @@
+.temperature {
+  font-size: 180%;
+  margin-bottom: 1px;
+}
+
+.templine {
+  padding-top: 20px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container {
+  margin: 10px auto;
+  max-width: 700px;
+}
+
+.city {
+  margin-top: 20px;
+}
+
+.unit {
+  font-size: 50%;
+  margin-bottom: 1px;
+}
+
+#current {
+  background-color: rgb(38, 155, 63);
+  border-color: rgb(38, 155, 63);
+}
+
+#weather-details {
+  color: rgb(55, 109, 174);
+}
+
+#description {
+  color: rgb(99, 102, 106);
+}
