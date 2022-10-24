@@ -1,0 +1,16 @@
+{
+  "folders": [
+	{
+		"path": "D:/projects/vs code-basics"
+	},
+	{
+		"path": "D:/projects/my resume"
+	},
+	{
+		"path": "D:/SheCodes"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "SheCodes"
+  }
+}
