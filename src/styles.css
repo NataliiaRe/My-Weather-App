@@ -37,3 +37,8 @@ ul {
 #description {
   color: rgb(99, 102, 106);
 }
+
+footer {
+  font-size: smaller;
+  color: darkgrey;
+}
