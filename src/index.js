@@ -3,7 +3,13 @@ let now = new Date();
 let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fry", "Sat"];
 let day = days[now.getDay()];
 let hour = now.getHours();
+if (hour < 10) {
+  hour = `0${hour}`;
+}
 let min = now.getMinutes();
+if (min < 10) {
+  min = `0${minutes}`;
+}
 document.querySelector("#time-day").innerHTML = `${day}    ${hour}:${min}`;
 
 let date = now.getDate();
