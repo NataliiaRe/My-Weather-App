@@ -82,10 +82,16 @@ function showTemperature(response) {
   let realTemp = document.querySelector("#temperature");
   let showWindHumidity = document.querySelector("#weather-details");
   let showDescription = document.querySelector("#description");
+  let iconElement = document.querySelector("#icon");
   h1.innerHTML = `Current temperature in ${city} is `;
   realTemp.innerHTML = `${temperature}`;
   showWindHumidity.innerHTML = `Humidity: ${humidity} % | Wind: ${wind} m/s`;
   showDescription.innerHTML = `Today it is ${description}`;
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 function showPosition(position) {
